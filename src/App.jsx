@@ -28,7 +28,7 @@ function App() {
 			setData([...mapItems(data), {
 				...post,
 				date: new Date(post.date),
-				id: data.length > 0 ? Math.max(data.map(oldPost => oldPost.id)) + 1 : 1
+				id: data.length > 0 ? Math.max(data.map(i => i.id)) + 1 : 1
 			}]);
 		} else {
 			setData([...mapItems(data).map(i => {
