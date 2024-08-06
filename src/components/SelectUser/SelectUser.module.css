@@ -1,0 +1,12 @@
+.select{
+    background: none;
+    border-radius: 5px;
+    border: 1px solid #323232;
+    padding: 10px;
+    color: white;
+}
+
+.select-option{
+    background-color: #181818;
+    padding: 5px;
+}

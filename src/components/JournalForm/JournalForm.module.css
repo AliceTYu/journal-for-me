@@ -1,0 +1,76 @@
+.journal-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-row{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333333;
+}
+
+.input{
+    font-family: "Source Sans 3", sans-serif;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-family: inherit;
+
+    width: 100%;
+} 
+
+.input::-webkit-calendar-picker-indicator {
+    color-scheme: dark;
+}
+
+.input::placeholder,
+.input-title::placeholder{
+    font-size: 16px;
+    color: #333333;
+    padding-left: 10px;
+    font-family: inherit;
+}
+
+.journal-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete{
+    background: none;
+    border: none;
+    margin-left: 1rem;
+
+    cursor: pointer;
+}
+
+.delete img{
+    width: 20px;
+    height: 20px;
+}
+
+.form-label{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    min-width: 80px;
+}
+
+.invalid{
+    border: 1px solid #ffcdfc;
+    background: #af3030;
+    color: white;
+}
+
+.invalid::placeholder{
+    color: transparent;
+}
+

@@ -1,0 +1,49 @@
+.input{
+    font-family: "Source Sans 3", sans-serif;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-family: inherit;
+
+    width: 100%;
+} 
+
+.input-title{
+    font-size: 32px;
+    font-weight: 600;
+    border-bottom: 1px solid #333333;
+}
+
+
+.input::-webkit-calendar-picker-indicator {
+    color-scheme: dark;
+}
+
+.input::placeholder,
+.input-title::placeholder{
+    font-size: 16px;
+    color: #333333;
+    padding-left: 10px;
+    font-family: inherit;
+}
+
+.form-label{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    min-width: 80px;
+}
+
+.invalid{
+    border: 1px solid #ffcdfc;
+    background: #af3030;
+    color: white;
+}
+
+.invalid::placeholder{
+    color: transparent;
+}
