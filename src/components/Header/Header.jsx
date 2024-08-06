@@ -3,7 +3,7 @@ import Button from '../Button/Button';
 import SelectUser from '../SelectUser/SelectUser';
 import Logo from '../Logo/Logo';
 
-const logos=['Personal journal', 'Journal for me'];
+const logos=['Personal journal', 'Чтобы работало: добавьте в Application (localStorage) переменную data со значением [] <- скобки )'];
 
 function Header() {
 	const [logoIndex, setLogoIndex] = useState(0);
@@ -14,8 +14,8 @@ function Header() {
 	
 	return (
 		<>
-			<Logo>{logos[logoIndex]}</Logo>
-			<Button onClick={toggleLogo}>Сменить лого</Button>
+			<Logo logoIndex={logoIndex}>{logos[logoIndex]}</Logo>
+			<Button onClick={toggleLogo}>Инфо</Button>
 			<SelectUser/>
 		</>
 	);

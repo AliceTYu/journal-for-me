@@ -1,9 +1,9 @@
 import { memo } from 'react';
 import styles from './Logo.module.css';
 
-function Logo({children}) {
+function Logo({children, logoIndex}) {
 	return (
-		<div className={styles.header}>
+		<div className={logoIndex===0 && styles.header}>
 			{children}
 		</div>
 	);
