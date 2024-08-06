@@ -34,7 +34,7 @@ function JournalForm( {onSubmit, selectData, onDelete} ) {
 			dispatchForm( {type: 'SET_VALUE' , payload: {userId} });
 		}
 		dispatchForm( {type: 'SET_VALUE' , payload: { ...selectData }});
-	}, [selectData, userId]);
+	}, [selectData]);
 
 	useEffect(() => {
 		let clearId;
