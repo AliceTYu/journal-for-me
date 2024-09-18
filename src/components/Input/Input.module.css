@@ -1,0 +1,37 @@
+.input{
+    font-family: sans-serif;
+    border-radius: 4px;
+    width: 100%;
+    background: #181818;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+
+    border: 1px solid transparent;
+}
+
+.input{
+    color-scheme: dark;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.title::placeholder{
+    font-size: 18px;
+}
+
+.another{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.invalid {
+    border: 1px solid rgb(255, 130, 130);
+}

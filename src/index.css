@@ -1,0 +1,12 @@
+:root {
+  font-family: "Source Sans 3", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #ffffff;
+  background-color: #181818;
+}
+
+body {
+  margin: 0 auto;
+}
