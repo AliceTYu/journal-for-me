@@ -91,13 +91,13 @@ function JournalForm({addItem, data, deleteItem, setSelectedItem}) {
 			<div className={styles.journalBlock}>
 				<Input value={values.title} ref={titleRef} onChange={setValue} appearence='title' isValid={isValid.title} type="text" name='title' placeholder='Заголовок'/>
 				{data?.id && <button className={styles.btn} onClick={deleteJornalItem} type='button'>
-					<img src="./public/delete.svg" alt="delete" />
+					<img src="./delete.svg" alt="delete" />
 				</button>}
 			</div>
 	
 			<div className={styles.journalBlock}>
 				<label htmlFor='date' className={styles.FormLable}>
-					<img src='./public/calendar.svg' alt='Иконка календаря'/>
+					<img src='./calendar.svg' alt='Иконка календаря'/>
 					<span>Дата</span>
 				</label>
 				<Input value={values.date ? new Date(values.date).toISOString().slice(0, 10) : ''} ref={dateRef} isValid={isValid.date} onChange={setValue} id='date' type="date" name='date'/>
@@ -105,7 +105,7 @@ function JournalForm({addItem, data, deleteItem, setSelectedItem}) {
 	
 			<div className={styles.journalBlock}>
 				<label htmlFor='tag' className={styles.FormLable}>
-					<img src='./public/folder.svg' alt='Иконка метки'/>
+					<img src='./folder.svg' alt='Иконка метки'/>
 					<span>Метки</span>
 				</label>
 				<Input value={values.tag} placeholder='Метки' onChange={setValue} id='tag' type='text' name='tag' />

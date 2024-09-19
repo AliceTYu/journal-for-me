@@ -20,7 +20,7 @@ function Header() {
 	
 	return (
 		<>
-			<img className={styles.logo} src='./public/header.svg' alt="logo" />
+			<img className={styles.logo} src='./header.svg' alt="logo" />
 			<TextEx text={logos[logoIndex]}/>
 			<Button onClick={logoToggl}>тык</Button>
 			<SelectUser/>
